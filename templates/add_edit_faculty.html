@@ -1,0 +1,22 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>{{ action }} Faculty</title>
+    <link rel="stylesheet" href="/static/styles.css">
+</head>
+<body>
+    <h1>{{ action }} Faculty</h1>
+    <form action="" method="POST">
+        <input type="text" name="name" placeholder="Name" value="{{ data[1] if data else '' }}" required>
+        <input type="text" name="department" placeholder="Department" value="{{ data[2] if data else '' }}" required>
+        <input type="email" name="email" placeholder="Email" value="{{ data[3] if data else '' }}" required>
+        <input type="text" name="phone" placeholder="Phone" value="{{ data[4] if data else '' }}" required>
+        <input type="text" name="address" placeholder="Address" value="{{ data[5] if data else '' }}" required>
+        <input type="date" name="date_of_joining" placeholder="Date of Joining" value="{{ data[6] if data else '' }}" required>
+        <button type="submit">{{ action }} Faculty</button>
+    </form>
+    <a href="/" class="back-btn">Back to List</a>
+</body>
+</html>

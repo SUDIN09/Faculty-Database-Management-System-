@@ -1,0 +1,21 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Faculty Details</title>
+    <link rel="stylesheet" href="/static/styles.css">
+</head>
+<body>
+    <h1>Faculty Details</h1>
+    <div class="faculty-details">
+        <p><strong>Name:</strong> {{ data[1] }}</p>
+        <p><strong>Department:</strong> {{ data[2] }}</p>
+        <p><strong>Email:</strong> {{ data[3] }}</p>
+        <p><strong>Phone:</strong> {{ data[4] }}</p>
+        <p><strong>Address:</strong> {{ data[5] }}</p>
+        <p><strong>Date of Joining:</strong> {{ data[6] }}</p>
+    </div>
+    <a href="/" class="back-btn">Back to List</a>
+</body>
+</html>
